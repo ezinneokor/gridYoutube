@@ -1,0 +1,189 @@
+:root{
+    box-sizing: border-box;
+}
+
+/* body > * {
+} */
+
+*{
+    margin:0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: .5fr 9fr;
+    grid-template-rows: 1fr;
+    position: relative;
+}
+
+.aside{
+    background-color: grey;
+    
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    color: black;
+}
+
+.nav{
+    display: flex;
+    width: 100%;
+    padding: 1em 0;
+
+}
+
+.nav > *{
+    margin-left: 20px;
+}
+
+.search > input{
+    height: 3em;
+    width: 500px;
+    margin-left: 8em;
+}
+
+.sub-nav{
+    display: flex;
+    padding: 1em 0;
+}
+.sub-nav-menu{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.sub-nav-menu > li + *{
+    margin-left: 3em;
+}
+
+.sub-nav-menu-item{
+    margin-left: 1em;
+}
+
+.hero{
+    background-color: black;
+    height: 65%;
+}
+
+.second-row{
+    display: grid;
+    /* grid-template-rows: 1fr; */
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1em;
+
+}
+
+.media{
+    border: 1px solid transparent;
+    cursor: pointer;
+   
+}
+
+.media:hover{
+    transform: translateY(-10%);
+}
+
+.movie-item{
+    margin-left: 1em;
+}
+
+.aside-hidden{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 80%;
+    background-color: grey;
+    color: white;
+    transform: translateX(-100%);
+    transition-property: all;
+    transition-duration: 2s;
+    /* transition-timing-function: linear; */
+    display: none;
+}
+
+.aside-hidden > ul, .main-aside>ul{
+    margin-top: 2em;
+    cursor: pointer;
+}
+
+.aside-hidden > ul > li{
+    padding: 1em;
+    list-style: none;
+    cursor: pointer;
+}
+
+.main-aside-item>li{
+    list-style: none;
+    padding: .5em 0 0 0;
+    margin-bottom: 1.3em;
+}
+
+.main-aside-item:hover{
+background-color: rgb(83, 81, 81);
+}
+
+.aside-hidden > ul > li:hover,.home{
+    /* border: 1px solid black; */
+    
+    background-color: rgb(83, 81, 81);
+    border-radius: 3px;
+}
+
+.aside-icon{
+    margin: 2em  0 0 3.5em;
+}
+
+.font-icon{
+    padding-right: 2em;
+}
+
+.main-icon{
+    margin-left: 1em;
+}
+
+.youtube-icon{
+    padding-left: 1em;
+    color: red;
+    font-size: 1.5em;
+}
+
+.youtube-icon>strong{
+    color: black;
+    font-size: 0.9em;
+}
+.aside-hidden small{
+    position: absolute;
+    top: 2.0%;
+    
+}
+.nav a small{
+    position: absolute;
+    top: 1.0%;
+    left: 20%;
+   
+}
+
+.main-bar-icon{
+    margin: 2em 0 0 3.5em;
+}
+
+.search a{
+    border: 1px solid black;
+    padding: .6em 1em .7em 1em;
+}
+
+.caption{
+    padding: 1.5em 0;
+    cursor: pointer;
+}
+
+
+ 
+
+
